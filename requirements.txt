@@ -1,0 +1,14 @@
+streamlit
+pandas
+plotly
+requests
+beautifulsoup4
+textblob
+trafilatura
+lxml_html_clean
+sumy
+yake
+wordcloud
+matplotlib
+selenium
+webdriver-manager

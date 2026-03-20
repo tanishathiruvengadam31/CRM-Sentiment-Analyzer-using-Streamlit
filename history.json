@@ -1,0 +1,218 @@
+[
+    {
+        "url": "https://www.amazon.com/dp/B09G9FPHY6?th=1",
+        "sentiment": "NEUTRAL",
+        "confidence": 0.0,
+        "time": "2026-03-11 23:52:49.176485"
+    },
+    {
+        "url": "https://en.wikipedia.org/wiki/Artificial_intelligence",
+        "sentiment": "NEGATIVE",
+        "confidence": 0.046,
+        "time": "2026-03-12 00:06:06.154762"
+    },
+    {
+        "url": "https://www.lenovo.com/in/en/p/laptops/thinkpad/thinkpadx1/x1-carbon-gen-11",
+        "sentiment": "POSITIVE",
+        "confidence": 0.284,
+        "time": "2026-03-12 00:08:14.267499"
+    },
+    {
+        "url": "https://www.amazon.com/dp/B09G9FPHY6?th=1",
+        "sentiment": "NEUTRAL",
+        "confidence": 0.0,
+        "time": "2026-03-17 19:54:48.571395"
+    },
+    {
+        "url": "https://www.amazon.com/dp/B09G9FPHY6?th=1",
+        "sentiment": "NEUTRAL",
+        "confidence": 0.0,
+        "time": "2026-03-17 20:09:07.028390"
+    },
+    {
+        "url": "https://www.amazon.com/dp/B09G9FPHY6?th=1",
+        "sentiment": "POSITIVE",
+        "confidence": 0.175,
+        "time": "2026-03-17 20:50:20.880321"
+    },
+    {
+        "url": "https://www.amazon.com/dp/B09G9FPHY6?th=1",
+        "sentiment": "NEUTRAL",
+        "confidence": 0.0,
+        "time": "2026-03-17 21:25:45.363838"
+    },
+    {
+        "url": "https://www.flipkart.com/sony-zv-e10-mirrorless-camera-body-only-vlog/p/itm5f30ed414a351?pid=DLLG6G8UNHFCDYY9&lid=LSTDLLG6G8UNHFCDYY9MNRFHI&marketplace=FLIPKART",
+        "sentiment": "POSITIVE",
+        "confidence": 0.398,
+        "time": "2026-03-17 21:26:52.711637"
+    },
+    {
+        "url": "https://www.amazon.com/dp/B09G9FPHY6?th=1",
+        "sentiment": "NEUTRAL",
+        "confidence": 0,
+        "time": "2026-03-17 22:04:58.951675"
+    },
+    {
+        "url": "https://www.flipkart.com/sony-zv-e10-mirrorless-camera-body-only-vlog/p/itm5f30ed414a351?pid=DLLG6G8UNHFCDYY9&lid=LSTDLLG6G8UNHFCDYY9MNRFHI&marketplace=FLIPKART",
+        "sentiment": "POSITIVE",
+        "confidence": 0.385,
+        "time": "2026-03-17 22:25:51.287453"
+    },
+    {
+        "url": "https://www.flipkart.com/sony-zv-e10-mirrorless-camera-body-only-vlog/p/itm5f30ed414a351?pid=DLLG6G8UNHFCDYY9&lid=LSTDLLG6G8UNHFCDYY9MNRFHI&marketplace=FLIPKART",
+        "sentiment": "POSITIVE",
+        "confidence": 0.385,
+        "time": "2026-03-17 22:39:00.026417"
+    },
+    {
+        "url": "https://www.amazon.com/dp/B09G9FPHY6?th=1",
+        "sentiment": "POSITIVE",
+        "confidence": 0.292,
+        "time": "2026-03-17 23:11:17.080502"
+    },
+    {
+        "url": "https://www.flipkart.com/sony-zv-e10-mirrorless-camera-body-only-vlog/p/itm5f30ed414a351?pid=DLLG6G8UNHFCDYY9&lid=LSTDLLG6G8UNHFCDYY9MNRFHI&marketplace=FLIPKART",
+        "sentiment": "POSITIVE",
+        "confidence": 0.144,
+        "time": "2026-03-17 23:14:07.017196"
+    },
+    {
+        "url": "https://www.flipkart.com/sony-zv-e10-mirrorless-camera-body-only-vlog/p/itm5f30ed414a351?pid=DLLG6G8UNHFCDYY9&lid=LSTDLLG6G8UNHFCDYY9MNRFHI&marketplace=FLIPKART",
+        "sentiment": "NEGATIVE",
+        "confidence": 0.002,
+        "time": "2026-03-17 23:58:28.050056"
+    },
+    {
+        "url": "https://www.amazon.com/dp/B09G9FPHY6?th=1",
+        "sentiment": "NEUTRAL",
+        "confidence": 0.0,
+        "time": "2026-03-17 23:58:46.548069"
+    },
+    {
+        "url": "https://www.flipkart.com/sony-zv-e10-mirrorless-camera-body-only-vlog/p/itm5f30ed414a351?pid=DLLG6G8UNHFCDYY9&lid=LSTDLLG6G8UNHFCDYY9MNRFHI&marketplace=FLIPKART",
+        "sentiment": "NEGATIVE",
+        "confidence": 0.002,
+        "time": "2026-03-18 00:21:34.284541"
+    },
+    {
+        "url": "https://www.amazon.com/dp/B09G9FPHY6?th=1",
+        "sentiment": "NEUTRAL",
+        "confidence": 0.0,
+        "time": "2026-03-18 00:55:19.098993"
+    },
+    {
+        "url": "https://www.flipkart.com/sony-zv-e10-mirrorless-camera-body-only-vlog/p/itm5f30ed414a351?pid=DLLG6G8UNHFCDYY9&lid=LSTDLLG6G8UNHFCDYY9MNRFHI&marketplace=FLIPKART",
+        "sentiment": "POSITIVE",
+        "confidence": 0.221,
+        "time": "2026-03-18 00:55:51.106736"
+    },
+    {
+        "url": "https://www.flipkart.com/sony-zv-e10-mirrorless-camera-body-only-vlog/p/itm5f30ed414a351?pid=DLLG6G8UNHFCDYY9&lid=LSTDLLG6G8UNHFCDYY9MNRFHI&marketplace=FLIPKART",
+        "sentiment": "NEGATIVE",
+        "confidence": 0.018,
+        "time": "2026-03-18 01:20:30.206350"
+    },
+    {
+        "url": "https://www.flipkart.com/sony-zv-e10-mirrorless-camera-body-only-vlog/p/itm5f30ed414a351?pid=DLLG6G8UNHFCDYY9&lid=LSTDLLG6G8UNHFCDYY9MNRFHI&marketplace=FLIPKART",
+        "sentiment": "NEGATIVE",
+        "confidence": 0.018,
+        "time": "2026-03-18 01:42:00.090117"
+    },
+    {
+        "url": "https://www.flipkart.com/sony-zv-e10-mirrorless-camera-body-only-vlog/p/itm5f30ed414a351?pid=DLLG6G8UNHFCDYY9&lid=LSTDLLG6G8UNHFCDYY9MNRFHI&marketplace=FLIPKART",
+        "sentiment": "NEGATIVE",
+        "confidence": 0.018,
+        "time": "2026-03-18 02:04:53.946334"
+    },
+    {
+        "url": "https://www.amazon.com/dp/B09G9FPHY6?th=1",
+        "sentiment": "NEUTRAL",
+        "confidence": 0.0,
+        "time": "2026-03-18 11:02:53"
+    },
+    {
+        "url": "https://www.amazon.com/dp/B09G9FPHY6?th=1",
+        "sentiment": "NEUTRAL",
+        "confidence": 0.0,
+        "time": "2026-03-18 13:24:44.266009"
+    },
+    {
+        "url": "https://www.amazon.com/dp/B09G9FPHY6?th=1",
+        "sentiment": "POSITIVE",
+        "confidence": 0.176,
+        "time": "2026-03-18 19:15:05.332840"
+    },
+    {
+        "url": "https://www.amazon.com/dp/B09G9FPHY6?th=1",
+        "sentiment": "POSITIVE",
+        "confidence": 0.176,
+        "time": "2026-03-18 19:31:07.394519"
+    },
+    {
+        "url": "https://www.amazon.com/dp/B09G9FPHY6?th=1",
+        "sentiment": "POSITIVE",
+        "confidence": 0.214,
+        "time": "2026-03-18 22:57:05.609172"
+    },
+    {
+        "url": "https://www.flipkart.com/sony-zv-e10-mirrorless-camera-body-only-vlog/p/itm5f30ed414a351?pid=DLLG6G8UNHFCDYY9&lid=LSTDLLG6G8UNHFCDYY9MNRFHI&marketplace=FLIPKART",
+        "sentiment": "NEUTRAL",
+        "confidence": 0,
+        "time": "2026-03-18 23:35:37.315177"
+    },
+    {
+        "url": "https://www.amazon.com/dp/B09G9FPHY6?th=1",
+        "sentiment": "POSITIVE",
+        "confidence": 0.284,
+        "time": "2026-03-18 23:38:34.847722"
+    },
+    {
+        "url": "https://www.amazon.com/dp/B09G9FPHY6?th=1",
+        "sentiment": "POSITIVE",
+        "confidence": 0.284,
+        "time": "2026-03-18 23:58:14.326402"
+    },
+    {
+        "url": "https://www.amazon.com/dp/B09G9FPHY6?th=1",
+        "sentiment": "POSITIVE",
+        "confidence": 0.284,
+        "time": "2026-03-19 01:06:26.403647"
+    },
+    {
+        "url": "https://www.flipkart.com/sony-zv-e10-mirrorless-camera-body-only-vlog/p/itm5f30ed414a351?pid=DLLG6G8UNHFCDYY9&lid=LSTDLLG6G8UNHFCDYY9MNRFHI&marketplace=FLIPKART",
+        "sentiment": "NEUTRAL",
+        "confidence": 0,
+        "time": "2026-03-19 01:08:03.852180"
+    },
+    {
+        "url": "https://www.amazon.in/dp/B0D9MK1L4D?ref=cm_sw_r_cso_wa_apin_ct_M41YSMM9NPJEGZ2A4308&ref_=cm_sw_r_cso_wa_apin_ct_M41YSMM9NPJEGZ2A4308&social_share=cm_sw_r_cso_wa_apin_ct_M41YSMM9NPJEGZ2A4308&th=1&psc=1",
+        "sentiment": "POSITIVE",
+        "confidence": 0.278,
+        "time": "2026-03-19 01:09:01.067510"
+    },
+    {
+        "url": "https://www.amazon.in/dp/B0D9MK1L4D?ref=cm_sw_r_cso_wa_apin_ct_M41YSMM9NPJEGZ2A4308&ref_=cm_sw_r_cso_wa_apin_ct_M41YSMM9NPJEGZ2A4308&social_share=cm_sw_r_cso_wa_apin_ct_M41YSMM9NPJEGZ2A4308&th=1&psc=1",
+        "sentiment": "POSITIVE",
+        "confidence": 0.278,
+        "time": "2026-03-19 01:15:17.826518"
+    },
+    {
+        "url": "https://www.amazon.com/dp/B0DK3YF38G/ref=fs_a_ipt2_us5?th=1",
+        "sentiment": "POSITIVE",
+        "confidence": 0.231,
+        "time": "2026-03-19 01:15:39.756309"
+    },
+    {
+        "url": "https://www.amazon.com/Timex-TWC001200-Expedition-Natural-Leather/dp/B01JO75X6K/?_encoding=UTF8&pd_rd_w=179wU&content-id=amzn1.sym.e85ee24d-ce5e-479d-bdb3-28d6161095d7&pf_rd_p=e85ee24d-ce5e-479d-bdb3-28d6161095d7&pf_rd_r=R3K51NYECGRQ56J6K3ED&pd_rd_wg=3FgpO&pd_rd_r=d75d180f-3e02-473c-a06e-d11779638b74&ref_=pd_hp_d_btf_exports-popular-this-season-with-similar-asins",
+        "sentiment": "POSITIVE",
+        "confidence": 0.485,
+        "time": "2026-03-20 18:09:16.986645"
+    },
+    {
+        "url": "https://timesofindia.indiatimes.com/news",
+        "sentiment": "POSITIVE",
+        "confidence": 0.066,
+        "time": "2026-03-20 18:11:41.580973"
+    }
+]
