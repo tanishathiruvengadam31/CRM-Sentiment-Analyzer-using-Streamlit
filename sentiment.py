@@ -95,13 +95,17 @@ def generate_insights(clusters):
     insights = []
 
     for key, group in clusters.items():
-
+        
         combined = " ".join(group)
-
-        blob = TextBlob(combined)
-
-        # Choose most informative sentence
-        best_sentence = max(blob.sentences, key=lambda x: len(x))
+        # Safe sentence splitting (NO TextBlob sentence dependency)
+        sentences = combined.split(".")
+        
+        sentences = [s.strip() for s in sentences if len(s.split()) > 5]
+        
+        if not sentences:
+            continue
+        
+        best_sentence = max(sentences, key=lambda x: len(x))
 
         insight = str(best_sentence).strip()
 
