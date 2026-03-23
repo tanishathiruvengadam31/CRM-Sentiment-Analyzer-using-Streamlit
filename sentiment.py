@@ -16,6 +16,7 @@ from textblob import TextBlob
 import re
 from collections import defaultdict
 
+
 # -------------------------------
 # STEP 1: CLEAN TEXT
 # -------------------------------
@@ -78,8 +79,7 @@ def cluster_sentences(sentences):
     for s in sentences:
         words = s.lower().split()
 
-        # Take first meaningful words as cluster key
-        key = " ".join(words[:3])
+        key = " ".join(words[:3])  # simple grouping
 
         clusters[key].append(s)
 
@@ -95,16 +95,17 @@ def generate_insights(clusters):
     insights = []
 
     for key, group in clusters.items():
-        
+
         combined = " ".join(group)
-        # Safe sentence splitting (NO TextBlob sentence dependency)
+
+        # SAFE sentence splitting (no TextBlob sentence dependency)
         sentences = combined.split(".")
-        
+
         sentences = [s.strip() for s in sentences if len(s.split()) > 5]
-        
+
         if not sentences:
             continue
-        
+
         best_sentence = max(sentences, key=lambda x: len(x))
 
         insight = str(best_sentence).strip()
@@ -117,47 +118,9 @@ def generate_insights(clusters):
     return unique[:5]
 
 
-# def refine_insights(insights):
-
-#     refined = []
-
-#     for text in insights:
-
-#         # -------------------------
-#         # STEP 1: CLEAN TEXT
-#         # -------------------------
-#         text = re.sub(r'[^a-zA-Z0-9., ]', ' ', text)
-#         text = text.strip()
-
-#         # -------------------------
-#         # STEP 2: REMOVE PERSONAL WORDS
-#         # -------------------------
-#         text = re.sub(r"\b(i|me|my|mine|we|our|us)\b", "", text, flags=re.IGNORECASE)
-
-#         # -------------------------
-#         # STEP 3: GRAMMAR CORRECTION
-#         # -------------------------
-#         blob = TextBlob(text)
-#         text = str(blob.correct())
-
-#         # -------------------------
-#         # STEP 4: REFRAME TO INSIGHT
-#         # -------------------------
-#         words = text.split()
-
-#         if len(words) < 5:
-#             continue
-
-#         # Create generalized sentence
-#         text = " ".join(words[:15])
-
-#         # Convert to neutral insight tone
-#         text = text.capitalize()
-
-#         if not text.endswith("."):
-#             text += "."
-
-#         refined.append(text)
+# -------------------------------
+# STEP 5: REFINE INSIGHTS
+# -------------------------------
 
 def refine_insights(insights):
 
@@ -165,32 +128,21 @@ def refine_insights(insights):
 
     for text in insights:
 
-        # -------------------------
-        # STEP 1: CLEAN TEXT
-        # -------------------------
+        # Clean text
         text = re.sub(r'[^a-zA-Z0-9., ]', ' ', text)
         text = re.sub(r'\s+', ' ', text).strip()
 
         if len(text.split()) < 6:
             continue
 
-        # -------------------------
-        # STEP 2: REMOVE PERSONAL WORDS
-        # -------------------------
+        # Remove personal words
         text = re.sub(r"\b(i|me|my|we|our|us)\b", "", text, flags=re.IGNORECASE)
 
-        # -------------------------
-        # STEP 3: GRAMMAR NORMALIZATION
-        # -------------------------
-        blob = TextBlob(text)
-        text = str(blob.correct())
+        # ❌ REMOVED TextBlob.correct() (causing crash)
 
-        # -------------------------
-        # STEP 4: EXTRACT CORE MEANING
-        # -------------------------
         words = text.split()
 
-        # Keep meaningful part (middle of sentence often better)
+        # Extract meaningful portion
         if len(words) > 12:
             core = words[2:14]
         else:
@@ -198,14 +150,15 @@ def refine_insights(insights):
 
         sentence = " ".join(core)
 
-        # -------------------------
-        # STEP 5: MAKE IT GENERIC (REMOVE SUBJECT BIAS)
-        # -------------------------
-        sentence = re.sub(r"\b(this|that|it|device|product)\b", "the product", sentence, flags=re.IGNORECASE)
+        # Make generic
+        sentence = re.sub(
+            r"\b(this|that|it|device|product)\b",
+            "the product",
+            sentence,
+            flags=re.IGNORECASE
+        )
 
-        # -------------------------
-        # STEP 6: FINAL FORMATTING
-        # -------------------------
+        # Final formatting
         sentence = sentence.capitalize()
 
         if not sentence.endswith("."):
@@ -213,26 +166,13 @@ def refine_insights(insights):
 
         refined.append(sentence)
 
-    # -------------------------
-    # STEP 7: REMOVE DUPLICATES
-    # -------------------------
+    # Remove duplicates
     refined = list(dict.fromkeys(refined))
 
     return refined[:5]
 
-    # -------------------------
-    # REMOVE DUPLICATES
-    # -------------------------
-    refined = list(dict.fromkeys(refined))
 
-    return refined[:5]
-
-    # -------------------------
-    # STEP 5: REMOVE DUPLICATES
-    # -------------------------
-    refined = list(dict.fromkeys(refined))
-
-    return refined[:5]# -------------------------------
+# -------------------------------
 # MAIN FUNCTION
 # -------------------------------
 
