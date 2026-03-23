@@ -11,4 +11,4 @@ yake
 wordcloud
 matplotlib
 selenium
-webdriver-manager
+nltk
