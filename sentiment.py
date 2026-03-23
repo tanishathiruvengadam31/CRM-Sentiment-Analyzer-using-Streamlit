@@ -5,18 +5,19 @@ from collections import defaultdict
 import nltk
 import os
 
-# Create a local folder for nltk data
-nltk_data_path = os.path.join(os.getcwd(), "nltk_data")
+# Streamlit-safe path
+nltk_data_path = "/tmp/nltk_data"
 os.makedirs(nltk_data_path, exist_ok=True)
 
-# Tell nltk to use this folder
+# Tell nltk to use this path
 nltk.data.path.append(nltk_data_path)
 
-# Download required tokenizer
+# Download required corpora
 try:
     nltk.data.find('tokenizers/punkt')
 except LookupError:
     nltk.download('punkt', download_dir=nltk_data_path)
+
 try:
     nltk.data.find('taggers/averaged_perceptron_tagger')
 except LookupError:
