@@ -1,24 +1,34 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
+import os
 import time
 
 
 def extract_text_from_url(url):
 
     options = webdriver.ChromeOptions()
-   
-    options.add_argument("--headless=new")
-    options.add_argument("--no-sandbox")
-    options.add_argument("--disable-dev-shm-usage")
-    options.add_argument("--disable-gpu")
-    options.add_argument("--remote-debugging-port=9222")
 
-    driver = webdriver.Chrome(
-        service=Service("/usr/bin/chromedriver"),
-        options=options
-    )
+    # Detect environment
+    if os.name == "nt":  # Windows (local laptop)
+        from webdriver_manager.chrome import ChromeDriverManager
+
+        options.add_argument("--headless")
+        options.add_argument("--disable-gpu")
+
+        service = Service(ChromeDriverManager().install())
+
+    else:  # Streamlit Cloud (Linux)
+
+        options.add_argument("--headless=new")
+        options.add_argument("--no-sandbox")
+        options.add_argument("--disable-dev-shm-usage")
+        options.add_argument("--disable-gpu")
+        options.add_argument("--remote-debugging-port=9222")
+
+        service = Service("/usr/bin/chromedriver")
+
+    driver = webdriver.Chrome(service=service, options=options)
 
     try:
         driver.get(url)
@@ -66,7 +76,6 @@ def extract_text_from_url(url):
         driver.quit()
 
         combined = " ".join(text_data)
-
         return combined[:5000]
 
     except Exception as e:
